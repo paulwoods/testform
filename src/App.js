@@ -1,5 +1,7 @@
 import './App.css';
 import ProfileForm from './ProfileForm'
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 
 const App = () => {
 
@@ -11,9 +13,12 @@ const App = () => {
 	}
 
 	return (
-		<div className="App">
-			<ProfileForm onSubmit={handleSubmit}/>
-		</div>
+
+		<Container maxWidth="sm">
+			<Box sx={{ my: 4 }}>
+				<ProfileForm onSubmit={handleSubmit}/>
+			</Box>
+		</Container>
 	);
 }
 
