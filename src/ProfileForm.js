@@ -24,7 +24,7 @@ const validationSchema = yup.object({
 		.required('last name is required')
 })
 
-const ProfileForm = () => {
+const ProfileForm = ({onSubmit}) => {
 
 	return <div> 
 		<Formik
@@ -34,12 +34,7 @@ const ProfileForm = () => {
 				lastName: "last"
 			}}
 			validationSchema={validationSchema}
-			onSubmit={(values, { setSubmitting }) => {
-         		setTimeout(() => {
-           			alert(JSON.stringify(values, null, 2))
-           			setSubmitting(false)
-     		}, 400)
-       	}}
+			onSubmit={onSubmit}
 		> 
 		{({isSubmitting, errors, touched}) => (
 			<Form>
