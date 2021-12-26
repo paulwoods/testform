@@ -1,3 +1,22 @@
+
+## github page
+https://paulwoods.github.io/testform/
+
+## deploy storybook
+https://github.com/storybookjs/storybook-deployer
+npm run deploy-storybook
+
+
+
+---
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

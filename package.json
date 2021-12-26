@@ -25,7 +25,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "eslintConfig": {
     "extends": [
@@ -62,8 +63,9 @@
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.4.9",
+    "@storybook/storybook-deployer": "^2.8.10",
     "gh-pages": "^3.2.3",
-    "immer":">=9.0.6",
+    "immer": ">=9.0.6",
     "trim": ">=0.0.3"
   }
 }
